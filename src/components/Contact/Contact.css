@@ -1,0 +1,17 @@
+.contact {
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  flex-flow: column;
+}
+
+.contact p {
+  width: 60%;
+  align-self: center;
+}
+
+.contact button {
+  width: 10%;
+  align-self: center;
+
+}
