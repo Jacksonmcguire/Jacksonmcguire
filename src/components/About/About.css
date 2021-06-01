@@ -1,0 +1,14 @@
+.about-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-content div {
+  width: 50%;
+  height: 500px;
+}
+
+
+.about-content img {
+  height: 500px;
+}

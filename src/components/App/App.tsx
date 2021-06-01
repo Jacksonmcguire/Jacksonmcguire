@@ -1,25 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { About } from '../About/About';
+import { Contact } from '../Contact/Contact';
+import { Projects } from '../Projects/Projects';
+import { FiLinkedin, FiGithub } from "react-icons/fi";
+
+import {
+  BrowserRouter as Router,
+  NavLink
+} from "react-router-dom";import './App.css';
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>Jackson McGuire</h1>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
+        <button>Resume</button>
       </header>
+      <main>
+      <aside>
+        <FiLinkedin></FiLinkedin>
+        <FiGithub></FiGithub>
+        <div className="email">
+        <p>jaxmcguire@gmail.com</p>
+        </div>
+      </aside>
+      <section className="main-content">
+        Hi, my name is Jackson McGuire
+        <About></About>
+        <Projects></Projects>
+        <Contact></Contact>
+      </section>
+      </main>
     </div>
+    </Router>
   );
 }
 
