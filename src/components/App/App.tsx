@@ -1,12 +1,13 @@
 import { About } from '../About/About';
 import { Contact } from '../Contact/Contact';
 import { Projects } from '../Projects/Projects';
-import { FiLinkedin, FiGithub } from "react-icons/fi";
+import { FiLinkedin, FiGithub, FiArrowUpCircle } from "react-icons/fi";
 
 import {
   BrowserRouter as Router,
   NavLink
 } from "react-router-dom";import './App.css';
+import { NavHashLink, HashLink } from 'react-router-hash-link';
 
 function App() {
   return (
@@ -14,21 +15,28 @@ function App() {
     <div className="App">
       <header>
         <h1>Jackson McGuire</h1>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
+        <NavHashLink smooth to="#about">About</NavHashLink>
+        <NavHashLink smooth to="#projects">Projects</NavHashLink>
+        <NavHashLink smooth to="#contact">Contact</NavHashLink>
         <button>Resume</button>
       </header>
       <main>
       <aside>
-        <FiLinkedin></FiLinkedin>
-        <FiGithub></FiGithub>
+        <a href="https://www.linkedin.com/in/jackson-mcguire/">
+          <FiLinkedin></FiLinkedin>
+        </a>
+        <a href="https://github.com/Jacksonmcguire">
+          <FiGithub></FiGithub>
+        </a>
         <div className="email">
         <p>jaxmcguire@gmail.com</p>
         </div>
       </aside>
       <section className="main-content">
-        Hi, my name is Jackson McGuire
+      {/* <HashLink smooth to="#top"><FiArrowUpCircle className="top-arrow"></FiArrowUpCircle></HashLink> */}
+        <p id="top">
+          Hi, my name is Jackson McGuire
+        </p>
         <About></About>
         <Projects></Projects>
         <Contact></Contact>
