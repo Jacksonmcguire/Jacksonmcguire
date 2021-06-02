@@ -1,14 +1,38 @@
 .about-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .about-content div {
   width: 50%;
-  height: 500px;
+  text-align: center;
 }
 
+.about-content ul {
+  display: flex;
+  text-align: left;
+}
+.about-content ul {
+  font-size: 1.4em;
+}
+
+.about-content ul p {
+  color: #A8DADC;
+  padding: 0 10px;
+  margin: 10px;
+}
 
 .about-content img {
-  height: 500px;
+  height: 400px;
+}
+
+.about-content p {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.about-section h3 {
+  border-bottom: 1px solid;
+  font-size: 2em;
+  font-weight: 700;
 }

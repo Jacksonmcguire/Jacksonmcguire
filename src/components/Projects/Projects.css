@@ -1,3 +1,7 @@
-.project-container {
-  padding: 50px;
+
+
+.project-container h3 {
+  font-size: 2em;
+  font-weight: 700;
+  border-bottom: 1px solid;
 }
