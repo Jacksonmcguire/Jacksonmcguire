@@ -5,25 +5,27 @@ import { SiTypescript } from 'react-icons/si'
 
 export const About = () => {
   return (
-    <section className="about-section">
+    <section className="about-section" id="about">
       <h3>About Me</h3>
       <article className="about-content">
       <div>
         <p>
-          Hello! My name is Brittany and I enjoy creating things that live on the internet. 
-          My interest in web development started back in 2012 when 
-          I decided to try editing custom Tumblr themes — turns out 
-          hacking together a custom reblog button taught me a lot about HTML & CSS!
+          Back In 2019 while backpacking through Australia, I met an array of "nomad" software engineers and became 
+        immediately enamored with the work, and the opportunities it provided. Software development for me is a way to 
+        exercise my strong collaboration, creativity, and resourcefulness. 
         </p>
-        <p>Fast-forward to today, and I've had the privilege of working at
-          an advertising agency, a start-up, a huge corporation, and a student-led design studio. 
-          My main focus these days is building accessible, 
-          inclusive products and digital experiences at Upstatement for a variety of clients.
+        <p>
+          Like trekking through rugged trails, the Turing school of Software and design is challenging and pushing me 
+        outside of my boundaries to become not just your average developer. My expertise is in building Javascript 
+        applications with the help of frameworks such as React and Vue. I have found that a sense of discovery and 
+        curiosity is paramount as a developer, I am always looking to add to my tech stack and to grow as an engineer 
+        through my peers and teammates. 
         </p>
-        <ul>Favorite Technologies: 
-        <FaReact></FaReact>
-        <FaVuejs></FaVuejs>
-        <SiTypescript></SiTypescript>
+        <ul>
+        <label>Some of the technologies I have been working with lately:</label> 
+        <p>React</p>
+        <p>Vue</p>
+        <p>Typescript</p>
         </ul>
       </div>
       <img src={logo} alt="Jackson" />
