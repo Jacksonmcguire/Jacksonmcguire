@@ -1,12 +1,10 @@
 import './Project.css';
-import owen from './owen-wilson.png';
-import { FaReact, FaVuejs } from 'react-icons/fa'
-import { SiTypescript } from 'react-icons/si'
+import { NavLinkBox } from '../NavLinkBox/NavLinkBox'
 import { FiGithub } from "react-icons/fi";
-import { GrHeroku } from 'react-icons/gr'
+import { BiLinkExternal } from 'react-icons/bi'
 type project = {
   deploy?: string, 
-  desc?: string, 
+  desc?: object, 
   github?: string, 
   name?: string, 
   tech?: string[],
@@ -20,11 +18,11 @@ export const Project = ({deploy, desc, github, name, tech, gif}: project) => {
       <img src={gif} alt="project gif" />
       <article className="project-info">
       <h4>{name}</h4>
-        <p className="description">
-          {desc}
-        </p>
-        <a href={deploy}><GrHeroku className="github"></GrHeroku></a>
+        <NavLinkBox desc={desc} name={name}>
+          
+        </NavLinkBox>
         <a href={github}><FiGithub className="github"></FiGithub></a>
+        <a href={deploy}><BiLinkExternal className="github"></BiLinkExternal></a>
         <ul>
           {tech?.map(name => <p>{name}</p>)}
         </ul>

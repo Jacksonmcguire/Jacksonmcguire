@@ -22,7 +22,7 @@ export const About = () => {
         through my peers and teammates. 
         </p>
         <ul>
-        <label>Some of the technologies I have been working with lately:</label> 
+        <label>Current technologies:</label> 
         <p>React</p>
         <p>Vue</p>
         <p>Typescript</p>

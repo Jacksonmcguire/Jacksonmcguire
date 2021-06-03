@@ -1,11 +1,10 @@
 .about-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .about-content div {
-  width: 50%;
-  text-align: center;
+  /* width: 60%; */
 }
 
 .about-content ul {
@@ -14,12 +13,21 @@
 }
 .about-content ul {
   font-size: 1.4em;
+  font-weight: 600;
+  padding: 0;
+  border-bottom: 1px solid;
+  width: fit-content;
 }
 
 .about-content ul p {
   color: #A8DADC;
   padding: 0 10px;
   margin: 10px;
+  
+}
+
+.about-content ul label {
+  align-self: center;
 }
 
 .about-content img {
@@ -35,4 +43,21 @@
   border-bottom: 1px solid;
   font-size: 2em;
   font-weight: 700;
+}
+
+@media screen and (max-width: 500px) {
+  .about-content {
+    flex-direction: column;
+  }
+  .about-section {
+    width: 100%;
+
+  }
+  .about-content img {
+    width: 100%;
+    display: none;
+  }
+  .about-content ul {
+    flex-direction: column;
+  }
 }

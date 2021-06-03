@@ -1,55 +1,63 @@
 .project-card {
   display: grid;
   margin: 50px 0;
-  border: 1px solid;
   border-radius: 2px;
-  grid-template-columns: 2fr 1fr;
-  height: 40vh;
+  grid-template-columns: 1fr 1fr;
 }
 
 .project-card h4 {
   font-weight: 800;
+  font-size: 1.4em;
 }
 
 
 .project-card img {
   opacity: .7;
-  height: 40vh;
+  height: 100%;
+  width: 100%;
 }
 
 .github {
-  margin: 0 40px;
+  margin: 5px 40px;
   transform: scale(2.5);
-  color: #A8DADC
+  color: #1D3557
 
 }
 
 .project-info {
-  /* font-size:; */
-  color: #A8DADC;
+  color: #1D3557;
   text-align: center;
-  height: 40vh;
+  background-color: #457B9D;
+  font-size: 1.1em;
 }
+
+
+
+.project-info ul p {
+  margin: 0px
+}
+
 .project-info ul {
   display: flex;
-  justify-content: space-between;
-  /* word-spacing: 10px; */
-  flex-flow: column wrap;
-  height: 40%;
+  justify-content: space-around;
+  font-size: 1.2em;
+  font-weight: 800;
+  padding: 0;
 }
 
-.description {
-  height: 25%;
-  overflow-y: scroll;
-}
+@media screen and (max-width: 500px) {
+  .project-card {
+    display: flex;
+    flex-direction: column;
+  }
 
-.description::-webkit-scrollbar {
-  background-color: transparent;
-  width: 2px;
-}
-
-.description::-webkit-scrollbar-thumb {
-  background-color: #A8DADC;
-  border-radius: 5px;
+  .project-info ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 1.1em;
+    font-weight: 800;
+    padding: 0;
+  }
 
 }

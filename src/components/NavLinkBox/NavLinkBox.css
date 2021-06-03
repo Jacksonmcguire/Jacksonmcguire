@@ -1,0 +1,58 @@
+
+.navLinkBox {
+  background-color: #1D3557;
+  margin: 0px -50px 20px 0px;
+  border: 1px solid;
+  padding: 10px;
+  color: #A8DADC;
+  font-weight: 600;
+  text-align: left;
+  font-size: 1.3em;
+  display: flex;
+  flex-flow: column;
+  width: 45vw;
+  position: relative;
+  transition: all 1s smooth;
+}
+
+
+
+.navLinkBox header {
+  background-color: transparent;
+  color: #457B9D; 
+}
+
+.navLinkBox header p {
+  margin: 5px 5px;
+  border-bottom: 1px solid;
+  cursor: pointer;
+  width: 50%;
+}
+
+.navLinkBox article {
+  height: 5em;
+  overflow-y: scroll;
+}
+
+.navLinkBox article p {
+  width: 100%;
+}
+
+.navLinkBox article::-webkit-scrollbar {
+  background-color: transparent;
+  width: 2px;
+}
+
+.navLinkBox article::-webkit-scrollbar-thumb {
+  background-color: #A8DADC;
+  border-radius: 5px;
+}
+
+.active-content { color: #A8DADC }
+@media screen and (max-width: 500px) {
+  .navLinkBox {
+    width: 100%;
+  }
+
+
+}
