@@ -1,7 +1,7 @@
 import { About } from '../About/About';
-import { Contact } from '../Contact/Contact';
+// import { Contact } from '../Contact/Contact';
 import { Projects } from '../Projects/Projects';
-import { FiLinkedin, FiGithub, FiArrowUpCircle } from "react-icons/fi";
+import { FiLinkedin, FiGithub, FiArrowUpCircle, FiMail } from "react-icons/fi";
 
 import {
   BrowserRouter as Router,
@@ -17,8 +17,8 @@ function App() {
         <h1>Jackson McGuire</h1>
         <NavHashLink smooth to="#about">About</NavHashLink>
         <NavHashLink smooth to="#projects">Projects</NavHashLink>
-        <NavHashLink smooth to="#contact">Contact</NavHashLink>
-        <button>Resume</button>
+        {/* <NavHashLink smooth to="#contact">Contact</NavHashLink> */}
+        <NavLink to="/resume">Resume</NavLink>
       </header>
       <main>
       <aside>
@@ -29,7 +29,9 @@ function App() {
           <FiGithub></FiGithub>
         </a>
         <div className="email">
-        <p>jaxmcguire@gmail.com</p>
+        <a href="https://www.jaxmcguire@gmail.com">
+          <FiMail></FiMail>
+        </a>
         </div>
       </aside>
       <section className="main-content">
@@ -39,7 +41,7 @@ function App() {
         </p>
         <About></About>
         <Projects></Projects>
-        <Contact></Contact>
+        {/* <Contact></Contact> */}
       </section>
       </main>
     </div>
