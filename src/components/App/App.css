@@ -19,6 +19,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  padding-right: 15px;
   color: #1D3557;
   height: 12%;
   background-color: #457B9D;
@@ -35,7 +36,7 @@ main {
   background-color: #1D3557;
   display: flex;
   height: 88%;
-  padding-bottom: 1.5%;
+  padding-bottom: 1.6%;
   justify-content: space-between;
 }
 
@@ -43,27 +44,19 @@ main aside {
   display: flex;
   flex-flow: column;
   height: 100%;
-  width: 1vw;
+  width: 3vw;
   padding: 10px;
-  background-color: #457B9D;
-  color: #1D3557
+  border-right: 1px #457B9D;
+  border-style: dotted solid;
+  color: #1D3557;
+  justify-content: space-around;
 }
 
 main aside svg {
-  margin: 15px 0px;
+  margin: 0 10px;
   transform: scale(2);
   cursor: pointer;
-  color: #1D3557
-}
-
-.email {
-  width: 40%;
-}
-
-.email p {
-  transform: rotate(90deg);
-  font-size: 1.4em;
-  align-self: flex-start;
+  color: #A8DADC
 }
 
 .main-content {
@@ -77,6 +70,11 @@ main aside svg {
   align-items: center;
 }
 
+.main-content h3 {
+  color: #A8DADC
+
+}
+
 .main-content::-webkit-scrollbar {
   background-color: transparent;
 }
@@ -87,4 +85,26 @@ main aside svg {
   position: fixed;
   margin: 0;
   align-self: center;
+}
+
+@media screen and (max-width: 500px) {
+    header a {
+      font-size: 1.3em;
+    }
+    h1 {
+      font-size: 1.5em;
+    }
+    main aside {
+      width: 2.7vw;
+    }
+    main aside svg {
+      transform: scale(1.2);
+      margin: 0 15px 0 0;
+    }
+    .main-content {
+      width: fit-content;
+    }
+    main {
+      padding-bottom: 7%;
+    }
 }
