@@ -3,6 +3,14 @@
   margin: 50px 0;
   border-radius: 2px;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 20px
+}
+
+.project-container h4 {
+  font-size: 2em;
+  color: #A8DADC;
+  border-bottom: 1px solid;
+  width: fit-content;
 }
 
 .project-card h4 {
@@ -13,34 +21,32 @@
 
 .project-card img {
   opacity: .7;
-  height: 100%;
   width: 100%;
 }
 
 .github {
-  margin: 5px 40px;
-  transform: scale(2.5);
-  color: #1D3557
+  transform: scale(1);
+  color: #A8DADC
 
 }
 
 .project-info {
-  color: #1D3557;
+  color: #457B9D;
   text-align: center;
-  background-color: #457B9D;
   font-size: 1.1em;
 }
 
 
 
 .project-info ul p {
-  margin: 0px
+  margin: 0px;
+  color: #A8DADC
 }
 
 .project-info ul {
   display: flex;
   justify-content: space-around;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 800;
   padding: 0;
 }

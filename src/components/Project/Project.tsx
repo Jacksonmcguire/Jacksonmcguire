@@ -14,19 +14,21 @@ type project = {
 export const Project = ({deploy, desc, github, name, tech, gif}: project) => {
   console.log(gif)
   return (
-    <div className="project-card">
-      <img src={gif} alt="project gif" />
-      <article className="project-info">
+    <section className="project-container">
       <h4>{name}</h4>
-        <NavLinkBox desc={desc} name={name}>
-          
-        </NavLinkBox>
-        <a href={github}><FiGithub className="github"></FiGithub></a>
-        <a href={deploy}><BiLinkExternal className="github"></BiLinkExternal></a>
-        <ul>
-          {tech?.map(name => <p>{name}</p>)}
-        </ul>
-      </article>
-    </div>
+      <div className="project-card">
+        <img src={gif} alt="project gif" />
+        <article className="project-info">
+          <NavLinkBox desc={desc} name={name}>
+            
+          </NavLinkBox>
+          <ul>
+            {tech?.map(name => <p>{name}</p>)}
+          <a href={github}><FiGithub className="github"></FiGithub></a>
+          <a href={deploy}><BiLinkExternal className="github"></BiLinkExternal></a>
+          </ul>
+        </article>
+      </div>
+    </section>
   )
 }

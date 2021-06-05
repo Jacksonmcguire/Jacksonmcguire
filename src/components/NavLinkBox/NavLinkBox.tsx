@@ -18,13 +18,18 @@ export const NavLinkBox = ({desc, name}: any) => {
 
   return (
     <section className="navLinkBox" id={name.replaceAll(' ', '')}>
-      <header>
-        <p onClick={changeContent} className="active-content" data-id="problem" data-val>Problem Solved</p>
-        <p onClick={changeContent} data-id="audience">Audience</p>
+      {/* <header>
+        <p onClick={changeContent} className="active-content" data-id="goal" data-val>Goal</p>
         <p onClick={changeContent} data-id="challenges">Challenges</p>
-      </header>
-      <article>
-        <p>{currentContent || desc.problem}</p>
+      </header> */}
+    
+      <article >
+        <p className="goal">Goal</p>
+        <p className="description">{desc.goal}</p>
+      </article>
+      <article >
+        <p className="challenges">Challenges</p>
+        <p className="description">{desc.challenges}</p>
       </article>
     </section>
   )
