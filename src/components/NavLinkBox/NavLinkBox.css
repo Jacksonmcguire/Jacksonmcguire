@@ -1,25 +1,29 @@
 
 .navLinkBox {
   background-color: #1D3557;
-  margin: 0px -50px 20px 0px;
-  border: 1px solid;
   padding: 10px;
-  color: #A8DADC;
+  color: #457B9D;
   font-weight: 600;
   text-align: left;
   font-size: 1.3em;
   display: flex;
-  flex-flow: column;
-  width: 45vw;
+  border-radius: 2px;
   position: relative;
   transition: all 1s smooth;
 }
 
+.navLinkBox article {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
 
 
 .navLinkBox header {
   background-color: transparent;
   color: #457B9D; 
+  border-bottom: none;
 }
 
 .navLinkBox header p {
@@ -29,7 +33,12 @@
   width: 50%;
 }
 
-.navLinkBox article {
+.goal, .challenges {
+  border-bottom: 1px solid;
+  color: #A8DADC;
+}
+
+.description {
   height: 5em;
   overflow-y: scroll;
 }
@@ -38,13 +47,13 @@
   width: 100%;
 }
 
-.navLinkBox article::-webkit-scrollbar {
+.description::-webkit-scrollbar {
   background-color: transparent;
   width: 2px;
 }
 
-.navLinkBox article::-webkit-scrollbar-thumb {
-  background-color: #A8DADC;
+.description::-webkit-scrollbar-thumb {
+  background-color: #457B9D;
   border-radius: 5px;
 }
 
