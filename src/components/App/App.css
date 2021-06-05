@@ -23,6 +23,7 @@ header {
   color: #1D3557;
   height: 12%;
   background-color: #457B9D;
+  border-bottom: 2px solid;
 }
 
 
@@ -44,19 +45,32 @@ main aside {
   display: flex;
   flex-flow: column;
   height: 100%;
-  width: 3vw;
+  width: 2vw;
   padding: 10px;
   border-right: 1px #457B9D;
   border-style: dotted solid;
   color: #1D3557;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 main aside svg {
-  margin: 0 10px;
+  margin: 20px 10px;
   transform: scale(2);
   cursor: pointer;
   color: #A8DADC
+}
+
+.top {
+  height: 100%;
+  width: 50%;
+}
+
+.top h3 {
+  font-size: 4em;
+  margin: 200px 0 0 0;
+}
+.top p {
+  font-size: 2em;
 }
 
 .main-content {
@@ -75,15 +89,17 @@ main aside svg {
 
 }
 
+
 .main-content::-webkit-scrollbar {
   background-color: transparent;
 }
 
 .top-arrow {
-  color: #457B9D;
+  color: #A8DADC;
   font-size: 2em;
   position: fixed;
   margin: 0;
+  z-index: 1;
   align-self: center;
 }
 
@@ -106,5 +122,10 @@ main aside svg {
     }
     main {
       padding-bottom: 7%;
+    }
+    .top {
+      height: 100%;
+      width: 50%;
+      display: none;
     }
 }

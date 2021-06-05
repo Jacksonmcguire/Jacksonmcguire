@@ -1,5 +1,4 @@
 import { About } from '../About/About';
-// import { Contact } from '../Contact/Contact';
 import { Projects } from '../Projects/Projects';
 import { FiLinkedin, FiGithub, FiArrowUpCircle, FiMail } from "react-icons/fi";
 
@@ -17,8 +16,7 @@ function App() {
         <h1>Jackson McGuire</h1>
         <NavHashLink smooth to="#about">About</NavHashLink>
         <NavHashLink smooth to="#projects">Projects</NavHashLink>
-        {/* <NavHashLink smooth to="#contact">Contact</NavHashLink> */}
-        <NavLink to="/resume">Resume</NavLink>
+        <NavHashLink smooth to="#resume">Resume</NavHashLink>
       </header>
       <main>
       <aside>
@@ -35,14 +33,24 @@ function App() {
         </div>
       </aside>
       <section className="main-content">
-      {/* <HashLink smooth to="#top"><FiArrowUpCircle className="top-arrow"></FiArrowUpCircle></HashLink> */}
-        <p id="top">
-          Hi, my name is Jackson McGuire
-        </p>
+      <HashLink smooth to="#top"><FiArrowUpCircle className="top-arrow"></FiArrowUpCircle></HashLink>
+        <section className="top" id="top">
+          <h3>
+            Hello, I'm Jackson McGuire.
+          </h3>
+          <p>
+            I'm a front-end engineer focused on creating accessible and secure user experiences.
+          </p>
+        </section>
         <About></About>
         <Projects></Projects>
-        {/* <Contact></Contact> */}
-      </section>
+        <section id="resume">
+        <iframe frameBorder="0" scrolling="no"
+          width="750" height="1000"
+          src="https://drive.google.com/file/d/1O4wca-p_tfOHN1usiTrEEn0oHFGdtjyh/preview">
+        </iframe>
+        </section>
+       </section> 
       </main>
     </div>
     </Router>
