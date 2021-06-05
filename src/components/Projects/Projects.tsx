@@ -12,7 +12,7 @@ export const Projects = () => {
     gif={project.gif}></Project>
   })
   return (
-    <section className="project-container" id="projects">
+    <section className="projects-container" id="projects">
       <h3>Projects</h3>
       {projects}
     </section>

@@ -1,7 +1,18 @@
+.projects-container {
+  width: 100%;;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
 
+.projects-container .project-container:nth-child(3) .project-card {
+  display: flex;
+  flex-flow: row-reverse;
+}
 
-.project-container h3 {
+.projects-container h3 {
   font-size: 2em;
   font-weight: 700;
   border-bottom: 1px solid;
+  width: 100%;
 }
