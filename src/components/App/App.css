@@ -57,7 +57,14 @@ main aside svg {
   margin: 20px 10px;
   transform: scale(2);
   cursor: pointer;
-  color: #A8DADC
+  color: #A8DADC;
+  transition: 1s ease-out;
+}
+
+main aside svg:hover {
+  transition: .7s ease;
+  transform: scale(2.3);
+  color: #457B9D
 }
 
 .top {
@@ -101,6 +108,12 @@ main aside svg {
   margin: 0;
   z-index: 1;
   align-self: center;
+  transition: 1s ease-out;
+}
+
+.top-arrow:hover {
+  transition: 1s ease;
+  transform: scale(1.5);
 }
 
 @media screen and (max-width: 500px) {

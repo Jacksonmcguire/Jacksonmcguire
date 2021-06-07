@@ -50,10 +50,11 @@
 .description::-webkit-scrollbar {
   background-color: transparent;
   width: 2px;
+  
 }
 
 .description::-webkit-scrollbar-thumb {
-  background-color: #457B9D;
+  background-color: #A8DADC;
   border-radius: 5px;
 }
 
