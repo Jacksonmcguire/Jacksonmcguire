@@ -15,7 +15,7 @@
   font-size: 1.4em;
   font-weight: 600;
   padding: 0;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #A8DADC;
   width: fit-content;
 }
 
@@ -31,12 +31,26 @@
 }
 
 .about-content img {
-  height: 400px;
+  opacity: .5;
+  height: 200px;
+  /* border-radius: 10%; */
+}
+
+.jackson {
+  float: right;  
+  height: 200px;
+  width: 200px;
+  
+  /* border-radius: 10%; */
+  /* background-color: #A8DADC; */
+  margin: 0;
+  border: 1px solid ;
 }
 
 .about-content p {
   font-size: 1.3em;
   font-weight: 600;
+  word-wrap: break-word;
 }
 
 .about-section h3 {
