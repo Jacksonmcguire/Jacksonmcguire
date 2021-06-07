@@ -5,7 +5,7 @@ import { BiLinkExternal } from 'react-icons/bi'
 type project = {
   deploy?: string, 
   desc?: object, 
-  github?: string, 
+  github: string, 
   name?: string, 
   tech?: string[],
   gif?: string, 
@@ -13,11 +13,15 @@ type project = {
 
 export const Project = ({deploy, desc, github, name, tech, gif}: project) => {
   console.log(gif)
+
+  const clickImage = () => {
+    window.location.replace(github)
+  }
   return (
     <section className="project-container">
       <h4>{name}</h4>
       <div className="project-card">
-        <img src={gif} alt="project gif" />
+        <img src={gif} alt="project gif" onClick={clickImage}/>
         <article className="project-info">
           <NavLinkBox desc={desc} name={name}>
             

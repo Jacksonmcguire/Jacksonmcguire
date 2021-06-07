@@ -33,7 +33,6 @@ function App() {
         </div>
       </aside>
       <section className="main-content">
-      <HashLink smooth to="#top"><FiArrowUpCircle className="top-arrow"></FiArrowUpCircle></HashLink>
         <section className="top" id="top">
           <h3>
             Hello, I'm Jackson McGuire.
@@ -47,7 +46,7 @@ function App() {
         <section id="resume">
         <iframe frameBorder="0" scrolling="no"
           width="750" height="1000"
-          src="https://drive.google.com/file/d/1O4wca-p_tfOHN1usiTrEEn0oHFGdtjyh/preview">
+          src="https://drive.google.com/file/d/1vgAvDIP8tKgOstDL2mQX4mBDrqqv2Vi2/preview">
         </iframe>
         </section>
        </section> 
