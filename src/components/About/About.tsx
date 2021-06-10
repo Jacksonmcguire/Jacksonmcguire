@@ -31,6 +31,9 @@ export const About = () => {
         <p>React</p>
         <p>Vue</p>
         <p>Typescript</p>
+        <p>Cypress</p>
+        <p>NodeJS</p>
+        <p>CSS/SASS</p>
         </ul>
       </div>
       </article>

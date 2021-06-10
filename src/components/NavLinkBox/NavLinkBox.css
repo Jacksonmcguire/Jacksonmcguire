@@ -41,6 +41,7 @@
 .description {
   height: 5em;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .navLinkBox article p {
@@ -62,6 +63,12 @@
 @media screen and (max-width: 500px) {
   .navLinkBox {
     width: 100%;
+    flex-flow: column;
+    padding: 0;
+  }
+
+  .description {
+    height: 75px;
   }
 
 

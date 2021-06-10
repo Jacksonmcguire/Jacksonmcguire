@@ -124,7 +124,13 @@ main aside svg:hover {
       font-size: 1.5em;
     }
     main aside {
-      width: 2.7vw;
+      display: flex;
+      flex-flow: column;
+      border: none;
+      width: fit-content;
+      height: fit-content;
+      position: fixed;
+      z-index: 1;
     }
     main aside svg {
       transform: scale(1.2);
@@ -139,6 +145,14 @@ main aside svg:hover {
     .top {
       height: 100%;
       width: 50%;
+      display: none;
+    }
+
+    iframe {
+      display: none;
+    }
+
+    .resume-link {
       display: none;
     }
 }

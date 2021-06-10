@@ -16,7 +16,7 @@ function App() {
         <h1>Jackson McGuire</h1>
         <NavHashLink smooth to="#about">About</NavHashLink>
         <NavHashLink smooth to="#projects">Projects</NavHashLink>
-        <NavHashLink smooth to="#resume">Resume</NavHashLink>
+        <NavHashLink smooth to="#resume" className="resume-link">Resume</NavHashLink>
       </header>
       <main>
       <aside>
