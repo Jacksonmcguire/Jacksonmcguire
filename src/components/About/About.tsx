@@ -11,15 +11,15 @@ export const About = () => {
       <div>
         <p>
         While backpacking through Australia in 2019, I met an array of "nomad" software 
-        <div className="jackson">
-          <img src={logo} alt="Jackson" />
-        </div>
         engineers and became immediately enamored with the work and the opportunities it provided. Like trekking through rugged trails, the Turing School
         of Software and Design has challenged me to push boundaries as a “not your 
         average” developer.  For me, software development is a way to exercise strong 
         collaboration, creativity, and resourcefulness.
         </p>
         <p>
+        <div className="jackson">
+          <img src={logo} alt="Jackson" />
+        </div>
         My expertise is in building Javascript applications with the help of frameworks
         such as React and Vue. I have found that a sense of discovery and curiosity is 
         paramount as a developer, I am always looking to add to my tech stack and to

@@ -1,6 +1,6 @@
 import { About } from '../About/About';
 import { Projects } from '../Projects/Projects';
-import { FiLinkedin, FiGithub, FiArrowUpCircle, FiMail } from "react-icons/fi";
+import { FiLinkedin, FiGithub, FiArrowDownCircle, FiMail } from "react-icons/fi";
 
 import {
   BrowserRouter as Router,
@@ -30,6 +30,7 @@ function App() {
         <a href="https://www.jaxmcguire@gmail.com">
           <FiMail></FiMail>
         </a>
+        <div className="underline"></div>
         </div>
       </aside>
       <section className="main-content">
@@ -40,6 +41,7 @@ function App() {
           <p>
             I'm a front-end engineer focused on creating accessible and secure user experiences.
           </p>
+          <NavHashLink smooth to="#about"><FiArrowDownCircle className="down"></FiArrowDownCircle></NavHashLink>
         </section>
         <About></About>
         <Projects></Projects>

@@ -2,7 +2,7 @@
 .navLinkBox {
   background-color: #1D3557;
   padding: 10px;
-  color: #457B9D;
+  color: #A8DADC;
   font-weight: 600;
   text-align: left;
   font-size: 1.3em;
@@ -50,7 +50,7 @@
 
 .description::-webkit-scrollbar {
   background-color: transparent;
-  width: 2px;
+  width: 5px;
   
 }
 

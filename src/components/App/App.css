@@ -8,29 +8,31 @@ html, body, .App, #root {
 
 }
 
+
+
 button {
   background-color: #1D3557;
   border: none;
-  color: #457B9D;
+  color: #A8DADC;
   cursor: pointer;
 }
 
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding-right: 15px;
-  color: #1D3557;
+  justify-content: space-around;
+  align-items: center;
+  color: #A8DADC;
   height: 12%;
-  background-color: #457B9D;
+  background-color: #1D3557;
   border-bottom: 2px solid;
 }
 
 
 header a, button {
-  color: #1D3557;
+  color: #A8DADC;
   font-size: 2em;
   background-color: transparent;
+  width: min-content;
 }
 
 main {
@@ -47,14 +49,15 @@ main aside {
   height: 100%;
   width: 2vw;
   padding: 10px;
-  border-right: 1px #457B9D;
+  border-right: 1px #A8DADC;
   border-style: dotted solid;
   color: #1D3557;
   justify-content: flex-start;
+  align-items: center;
 }
 
 main aside svg {
-  margin: 20px 10px;
+  margin: 20px 0;
   transform: scale(2);
   cursor: pointer;
   color: #A8DADC;
@@ -68,24 +71,46 @@ main aside svg:hover {
 }
 
 .top {
-  height: 100%;
+  box-sizing: border-box;
+  height: max-content;
   width: 50%;
+  height: 100%;
+  text-align: center;
+  position: static;
+}
+.down {
+  cursor: pointer;
+  font-size: 3em;
+  color: #A8DADC;
+}
+@keyframes load {
+  from {
+    font-size: 1em;
+  }
+
+  to {
+    font-size: 4em;
+  }
+}
+.top h3 {
+  transition: ease-in-out;
+  margin: 200px 0 0 0;
+  font-size: 4em;
+  animation: load 2.5s;
 }
 
-.top h3 {
-  font-size: 4em;
-  margin: 200px 0 0 0;
-}
 .top p {
   font-size: 2em;
 }
+
+
 
 .main-content {
   border-radius: 10px;
   padding: 50px;
   width: 100%;
   overflow-y: scroll;
-  color: #457B9D;
+  color: #A8DADC;
   display: flex;
   flex-flow: column;
   align-items: center;
