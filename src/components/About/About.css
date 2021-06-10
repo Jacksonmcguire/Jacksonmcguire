@@ -3,15 +3,9 @@
   justify-content: space-between;
 }
 
-.about-content div {
-  /* width: 60%; */
-}
-
 .about-content ul {
   display: flex;
   text-align: left;
-}
-.about-content ul {
   font-size: 1.4em;
   font-weight: 600;
   padding: 0;
@@ -21,9 +15,8 @@
 
 .about-content ul p {
   color: #A8DADC;
-  padding: 0 10px;
   margin: 10px;
-  
+  font-size: .8em;
 }
 
 .about-content ul label {
@@ -33,16 +26,12 @@
 .about-content img {
   opacity: .5;
   height: 200px;
-  /* border-radius: 10%; */
 }
 
 .jackson {
   float: right;  
   height: 200px;
   width: 200px;
-  
-  /* border-radius: 10%; */
-  /* background-color: #A8DADC; */
   margin: 0;
   border: 1px solid ;
 }
@@ -67,11 +56,11 @@
     width: 100%;
 
   }
-  .about-content img {
+  .about-content img, .jackson {
     width: 100%;
     display: none;
   }
   .about-content ul {
-    flex-direction: column;
+    flex-flow: column wrap;
   }
 }
