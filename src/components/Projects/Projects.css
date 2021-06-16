@@ -17,8 +17,8 @@
   width: 100%;
 }
 
-@media screen and (max-width: 500px) {
-  .projects-container .project-container:nth-child(3) .project-card {
+@media screen and (max-width: 900px) {
+  .projects-container .project-container:nth-child(3) .project-card, .projects-container .project-card {
     display: flex;
     flex-direction: column;
   }

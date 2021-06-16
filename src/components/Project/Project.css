@@ -85,4 +85,9 @@
     display: flex;
     flex-flow: column;
   }
+
+  .project-container h4 {
+    margin: 0;
+  }
+
 }

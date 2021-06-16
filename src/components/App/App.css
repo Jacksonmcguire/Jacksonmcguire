@@ -1,11 +1,12 @@
 html, body, .App, #root {
   height: 100%;
+  background-color: #1D3557;
 
   overflow-y: hidden;
 }
 * {
   font-family: 'Abel', sans-serif;
-
+  transition: ease-in
 }
 
 
@@ -22,11 +23,10 @@ header {
   justify-content: space-around;
   align-items: center;
   color: #A8DADC;
-  height: 12%;
   background-color: #1D3557;
   border-bottom: 2px solid;
+  transition: 1s ease-in-out;
 }
-
 
 header a, button {
   color: #A8DADC;
@@ -73,7 +73,6 @@ main aside svg:hover {
 .top {
   box-sizing: border-box;
   height: max-content;
-  width: 50%;
   height: 100%;
   text-align: center;
   position: static;
@@ -82,25 +81,46 @@ main aside svg:hover {
   cursor: pointer;
   font-size: 3em;
   color: #A8DADC;
+  transition: 1s ease-in-out;
 }
 @keyframes load {
   from {
-    font-size: 1em;
+    font-size: 3em;
+    transform:translateX(-20%);
   }
 
   to {
-    font-size: 4em;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 4.3em;
   }
 }
 .top h3 {
   transition: ease-in-out;
   margin: 200px 0 0 0;
-  font-size: 4em;
-  animation: load 2.5s;
+  font-size: 4.3em;
+  animation: load 1.4s;
 }
 
 .top p {
   font-size: 2em;
+  transition: 1s ease-in-out;
+  animation: bounce 2s;
+
+}
+
+@keyframes bounce {
+  from {
+    transform: scale(1.3);
+    transform:translateX(10%);
+
+  }
+
+  to {
+    transform: scale(1);
+    transition: ease-out;
+  }
 }
 
 
@@ -136,9 +156,48 @@ main aside svg:hover {
   transition: 1s ease-out;
 }
 
-.top-arrow:hover {
+.top-arrow:hover, .down:hover {
   transition: 1s ease;
   transform: scale(1.5);
+}
+
+@media screen and (max-width: 1200px) {
+  
+  header {
+    align-items: flex-end;
+    padding-top: 15px;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  main aside {
+    padding: 20px
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  .main-content {
+    padding: 1px;
+    width: 90%;
+  }
+
+  main aside {
+    border: none;
+  }
+
+}
+
+@media screen and (max-width: 750px) {
+  iframe {
+    display: none;
+  }
+
+  .resume-link {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -150,34 +209,28 @@ main aside svg:hover {
     }
     main aside {
       display: flex;
-      flex-flow: column;
+      flex-flow: row;
       border: none;
-      width: fit-content;
+      width: 95%;
       height: fit-content;
       position: fixed;
+      justify-content: flex-end;
       z-index: 1;
     }
+
     main aside svg {
-      transform: scale(1.2);
-      margin: 0 15px 0 0;
+      transform: scale(1.8);
+      margin: 0 15px;
     }
     .main-content {
       width: fit-content;
+      padding: 15px;
     }
     main {
-      padding-bottom: 7%;
+      /* padding-bottom: 8.8%; */
     }
     .top {
-      height: 100%;
-      width: 50%;
       display: none;
     }
 
-    iframe {
-      display: none;
-    }
-
-    .resume-link {
-      display: none;
-    }
 }
