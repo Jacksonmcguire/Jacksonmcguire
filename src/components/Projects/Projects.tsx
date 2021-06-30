@@ -9,7 +9,8 @@ export const Projects = () => {
     deploy={project.deploy}
     desc={project.desc}
     tech={project.tech}
-    gif={project.gif}></Project>
+    gif={project.gif}
+    key={project.deploy}></Project>
   })
   return (
     <section className="projects-container" id="projects">

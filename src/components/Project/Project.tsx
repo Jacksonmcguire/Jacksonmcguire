@@ -12,24 +12,23 @@ type project = {
 }
 
 export const Project = ({deploy, desc, github, name, tech, gif}: project) => {
-  console.log(gif)
 
   const clickImage = () => {
-    window.location.replace(github)
+    window.open(github, '_blank');
   }
   return (
     <section className="project-container">
       <h4>{name}</h4>
       <div className="project-card">
-        <img src={gif} alt="project gif" onClick={clickImage}/>
+        <img src={gif} alt={name + 'gif'} onClick={clickImage}/>
         <article className="project-info">
           <NavLinkBox desc={desc} name={name}>
             
           </NavLinkBox>
           <ul>
-            {tech?.map(name => <p>{name}</p>)}
-          <a href={github}><FiGithub className="github"></FiGithub></a>
-          <a href={deploy}><BiLinkExternal className="github"></BiLinkExternal></a>
+            {tech?.map(name => <li key={name}><p>{name}</p></li>)}
+            <li><a href={github} aria-label="repo link"><FiGithub className="github"></FiGithub></a></li>
+            <li><a href={deploy} aria-label="deploy link"><BiLinkExternal className="github"></BiLinkExternal></a></li>
           </ul>
         </article>
       </div>

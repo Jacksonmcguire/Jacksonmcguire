@@ -1,12 +1,10 @@
 import './About.css'
 import logo from './github.jpg';
-import { FaReact, FaVuejs } from 'react-icons/fa'
-import { SiTypescript } from 'react-icons/si'
 
 export const About = () => {
   return (
     <section className="about-section" id="about">
-      <h3>About Me</h3>
+      <h2>About Me</h2>
       <article className="about-content">
       <div>
         <p>
@@ -16,10 +14,10 @@ export const About = () => {
         average” developer.  For me, software development is a way to exercise strong 
         collaboration, creativity, and resourcefulness.
         </p>
-        <p>
         <div className="jackson">
           <img src={logo} alt="Jackson" />
         </div>
+        <p>
         My expertise is in building Javascript applications with the help of frameworks
         such as React and Vue. I have found that a sense of discovery and curiosity is 
         paramount as a developer, I am always looking to add to my tech stack and to
@@ -27,13 +25,13 @@ export const About = () => {
 
         </p>
         <ul>
-        <label>Current technologies:</label> 
-        <p>React</p>
-        <p>Vue</p>
-        <p>Typescript</p>
-        <p>Cypress</p>
-        <p>NodeJS</p>
-        <p>CSS/SASS</p>
+        <li>Current technologies:</li> 
+        <li>React</li>
+        <li>Vue</li>
+        <li>Typescript</li>
+        <li>Cypress</li>
+        <li>NodeJS</li>
+        <li>CSS/SASS</li>
         </ul>
       </div>
       </article>
