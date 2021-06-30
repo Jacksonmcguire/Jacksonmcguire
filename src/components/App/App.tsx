@@ -3,10 +3,9 @@ import { Projects } from '../Projects/Projects';
 import { FiLinkedin, FiGithub, FiArrowDownCircle, FiMail } from "react-icons/fi";
 
 import {
-  BrowserRouter as Router,
-  NavLink
+  BrowserRouter as Router
 } from "react-router-dom";import './App.css';
-import { NavHashLink, HashLink } from 'react-router-hash-link';
+import { NavHashLink } from 'react-router-hash-link';
 
 function App() {
   return (
@@ -20,35 +19,27 @@ function App() {
       </header>
       <main>
       <aside>
-        <a href="https://www.linkedin.com/in/jackson-mcguire/">
-          <FiLinkedin></FiLinkedin>
-        </a>
-        <a href="https://github.com/Jacksonmcguire">
-          <FiGithub></FiGithub>
-        </a>
-        <div className="email">
-        <a href="https://www.jaxmcguire@gmail.com">
-          <FiMail></FiMail>
-        </a>
-        <div className="underline"></div>
-        </div>
+        <FiLinkedin aria-label="linked in" onClick={() => window.open("https://www.linkedin.com/in/jackson-mcguire/", '_blank')}></FiLinkedin>
+        <FiGithub aria-label="Github" onClick={() => window.open("https://github.com/Jacksonmcguire", '_blank')}></FiGithub>
+        <FiMail aria-label="Gmail" onClick={() => window.open("https://www.jaxmcguire@gmail.com", '_blank')}></FiMail>
       </aside>
       <section className="main-content">
         <section className="top" id="top">
-          <h3>
+          <h2>
             Hello, I'm Jackson McGuire.
-          </h3>
+          </h2>
           <p>
             I'm a front-end engineer focused on creating accessible and secure user experiences.
           </p>
-          <NavHashLink smooth to="#about"><FiArrowDownCircle className="down"></FiArrowDownCircle></NavHashLink>
+          <NavHashLink smooth to="#about" aria-label="down"><FiArrowDownCircle className="down"></FiArrowDownCircle></NavHashLink>
         </section>
         <About></About>
         <Projects></Projects>
         <section id="resume">
         <iframe frameBorder="0" scrolling="no"
           width="750" height="1000"
-          src="https://drive.google.com/file/d/1vgAvDIP8tKgOstDL2mQX4mBDrqqv2Vi2/preview">
+          src="https://drive.google.com/file/d/1vgAvDIP8tKgOstDL2mQX4mBDrqqv2Vi2/preview"
+          title="Resume">
         </iframe>
         </section>
        </section> 

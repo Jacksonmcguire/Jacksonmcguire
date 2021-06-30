@@ -9,6 +9,10 @@ html, body, .App, #root {
   transition: ease-in
 }
 
+li {
+  list-style: none;
+}
+
 
 
 button {
@@ -33,6 +37,8 @@ header a, button {
   font-size: 2em;
   background-color: transparent;
   width: min-content;
+  transition: 1s ease-in-out;
+
 }
 
 main {
@@ -96,7 +102,7 @@ main aside svg:hover {
     font-size: 4.3em;
   }
 }
-.top h3 {
+.top h2 {
   transition: ease-in-out;
   margin: 200px 0 0 0;
   font-size: 4.3em;
@@ -156,9 +162,10 @@ main aside svg:hover {
   transition: 1s ease-out;
 }
 
-.top-arrow:hover, .down:hover {
-  transition: 1s ease;
-  transform: scale(1.5);
+.top-arrow:hover, .down:hover, header a:hover {
+  transition: 1.2s ease;
+  transform: scale(1.25);
+  color: #457B9D
 }
 
 @media screen and (max-width: 1200px) {
@@ -227,7 +234,6 @@ main aside svg:hover {
       padding: 15px;
     }
     main {
-      /* padding-bottom: 8.8%; */
     }
     .top {
       display: none;
