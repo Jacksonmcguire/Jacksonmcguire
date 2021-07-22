@@ -22,6 +22,17 @@ export const projectData = [
     gif: 'https://user-images.githubusercontent.com/72054706/115272559-c35fc100-a0fb-11eb-84c3-a39e5b153d55.gif'
   },
   {
+    name: 'Trivia Fanatics',
+    github: 'https://github.com/Jacksonmcguire/trivia-fanatics',
+    deploy: 'https://trivia-fanatics.herokuapp.com/',
+    desc: {
+      goal: 'Learn how to use SocketIO with Node JS and React to create a multiplayer game with real time backend communication.',
+      challenges: 'Dealing with CORS issues, bugs in the data model, and getting comfortable with SocketIO structure'
+    },    
+    tech: ['React', 'SocketIO', 'Node JS', 'Router', 'Javascript'],
+    gif: 'https://media.giphy.com/media/JRPevIgj3DXuZBwhMk/giphy.gif'
+  },
+  {
     name: 'Rotten Turtle Tales',
     github: 'https://github.com/Shakikka/rotten-turtle-tales',
     deploy: 'https://rottenturtletales.herokuapp.com/',

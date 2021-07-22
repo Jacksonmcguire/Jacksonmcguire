@@ -5,7 +5,8 @@
   justify-content: space-between;
 }
 
-.projects-container .project-container:nth-child(3) .project-card {
+.projects-container .project-container:nth-child(3) .project-card,
+.projects-container .project-container:nth-child(5) .project-card {
   display: flex;
   flex-flow: row-reverse;
 }
@@ -18,7 +19,9 @@
 }
 
 @media screen and (max-width: 900px) {
-  .projects-container .project-container:nth-child(3) .project-card, .projects-container .project-card {
+  .projects-container .project-container:nth-child(3) .project-card,
+  .projects-container .project-container:nth-child(5) .project-card,
+  .projects-container .project-card {
     display: flex;
     flex-direction: column;
   }
