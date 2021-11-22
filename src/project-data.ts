@@ -1,3 +1,4 @@
+import img from './components/About/kikusui.png'
 export const projectData = [
   {
     name: 'Flick Finder',
@@ -43,5 +44,15 @@ export const projectData = [
     tech: ['React', 'React Beautiful DND', 'Cypress', 'Router'],
     gif: 'https://media.giphy.com/media/HzLcVvt2ylZgdEFDgc/giphy.gif'
   },
-  
+  {
+    name: '@koii-network/kikusui',
+    github: 'https://github.com/koii-network/kikusui#readme',
+    deploy: 'https://www.npmjs.com/package/@koii-network/kikusui',
+    desc: {
+      goal: "The wallet provider for Koii Network's Finnie.",
+      challenges: 'Learning how to deploy to NPM, Integrating and testing package with Finnie wallet chrome extension.'
+    },
+    tech: ['Typescript', 'NPM', 'Github Actions', 'Node JS'],
+    gif: img
+  }
 ]

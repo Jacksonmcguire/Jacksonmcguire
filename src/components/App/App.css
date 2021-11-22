@@ -92,14 +92,12 @@ main aside svg:hover {
 @keyframes load {
   from {
     font-size: 3em;
-    transform:translateX(-20%);
   }
 
   to {
     top: 0;
     right: 0;
     bottom: 0;
-    font-size: 4.3em;
   }
 }
 .top h2 {
