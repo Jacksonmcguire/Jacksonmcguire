@@ -1,5 +1,6 @@
 import { About } from '../About/About';
 import { Projects } from '../Projects/Projects';
+import { Experience } from '../Experience/Experience';
 import { FiLinkedin, FiGithub, FiArrowDownCircle, FiMail } from "react-icons/fi";
 
 import {
@@ -15,7 +16,7 @@ function App() {
         <h1>Jackson McGuire</h1>
         <NavHashLink smooth to="#about">About</NavHashLink>
         <NavHashLink smooth to="#projects">Projects</NavHashLink>
-        <NavHashLink smooth to="#resume" className="resume-link">Resume</NavHashLink>
+        <NavHashLink smooth to="#experience" className="resume-link">Experience</NavHashLink>
       </header>
       <main>
       <aside>
@@ -35,12 +36,8 @@ function App() {
         </section>
         <About></About>
         <Projects></Projects>
-        <section id="resume">
-        <iframe frameBorder="0" scrolling="no"
-          width="750" height="1000"
-          src="https://drive.google.com/file/d/1vgAvDIP8tKgOstDL2mQX4mBDrqqv2Vi2/preview"
-          title="Resume">
-        </iframe>
+        <section id="experience">
+        <Experience></Experience>
         </section>
        </section> 
       </main>
