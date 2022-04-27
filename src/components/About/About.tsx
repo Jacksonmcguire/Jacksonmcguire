@@ -29,6 +29,9 @@ export const About = () => {
         <li>React</li>
         <li>Vue</li>
         <li>Typescript</li>
+        <li>Golang</li>
+        <li>SocketIO</li>
+        <li>AWS</li>
         <li>Cypress</li>
         <li>NodeJS</li>
         <li>CSS/SASS</li>
