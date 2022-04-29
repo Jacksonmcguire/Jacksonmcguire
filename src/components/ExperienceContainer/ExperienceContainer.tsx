@@ -11,7 +11,7 @@ export const ExperienceContainer = ({title, company, desc, tech, date}:experienc
   const descriptions = desc?.length && <div className='descriptions'>
   {desc?.map(bullet => <p>{"-> " + bullet}</p>)}
   </div>
-  const technologies = tech?.length && <ul className='techs'>Tech Used:{tech?.map(t => <li key={t}>{t}</li>)}</ul>
+  const technologies = tech?.length && <ul className='techs'>{tech?.map(t => <li key={t}>{t}</li>)}</ul>
   return (
     <article className='exp-container'>
       <div className="headline">

@@ -12,8 +12,10 @@
 }
 
 
+
 .exp h3 {
   font-size: 2em;
+  text-align: center;
 }
 
 @media screen and (max-width: 500px) {
