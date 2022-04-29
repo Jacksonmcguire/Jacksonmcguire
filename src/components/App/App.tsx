@@ -22,7 +22,7 @@ function App() {
       <aside>
         <FiLinkedin aria-label="linked in" onClick={() => window.open("https://www.linkedin.com/in/jackson-mcguire/", '_blank')}></FiLinkedin>
         <FiGithub aria-label="Github" onClick={() => window.open("https://github.com/Jacksonmcguire", '_blank')}></FiGithub>
-        <FiMail aria-label="Gmail" onClick={() => window.open("https://www.jaxmcguire@gmail.com", '_blank')}></FiMail>
+        <FiMail aria-label="Gmail" onClick={() => window.open("mailto:jaxmcguire@gmail.com", '_blank')}></FiMail>
       </aside>
       <section className="main-content">
         <section className="top" id="top">

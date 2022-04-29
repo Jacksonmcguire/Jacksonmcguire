@@ -33,7 +33,6 @@ edu: [
     title: "AWS Certified Cloud Practitioner",
     company: "Amazon Web Services",
     date: "2021 to 2024",
-    // desc: "Apprenticeship software engineer through Multiverse apprenticeships.",
     tech: ["AWS"]
   },
   {
